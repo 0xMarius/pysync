@@ -2,13 +2,17 @@
 
 **Purpose of this project:** I use rsync infrequently enough to forget how to properly format the CLI input, especially when a private key is used.
 
-GUI is here for the ease of use
+GUI is here for the ease of use.
 
 
 
 ![](./rsync-gui.webp)
 
-Equivalent to: rsync --rsh='ssh -i /home/marius/.ssh/id_ed25519' -a /home/marius/Projects/sysrsync/main.py marius@127.0.0.0:/home/marius
+Equivalent to: 
+
+```bash
+rsync --rsh='ssh -i /home/marius/.ssh/id_ed25519' sync_source_contents=False -a /home/marius/Projects/sysrsync/main.py marius@127.0.0.0:/home/marius
+```
 
 
 
